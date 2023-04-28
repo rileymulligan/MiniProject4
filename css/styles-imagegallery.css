@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+#cornerBtn {
+  padding: 20px;
+}
+#cornerBtn:hover {
+  padding: 30px;
+  background-color: rgba(128, 0, 0, 1);
+
+}
+h1 {
+  font-size: 300%;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px #FF0000, -1px -1px 1px #FF0000, -1px 1px 1px #FF0000, 1px -1px 1px #FF0000;
+}
+
+  
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  max-width: 450px;
+  width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 15px;
+  border: 3px outset silver;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    max-width: 100%;
+  }
+}

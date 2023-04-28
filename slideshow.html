@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles-slideshow.css">
+    <title>Troye Sivan Performing</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo-image.png" alt="Get Your Head In The Clouds and Beyond" title="Get Your Head In The Clouds and Beyond"></a>
+        <button id="displayMenu" data-visible="false"></button>
+        <nav id="navigation" data-visible="false">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imagegallery.html">Image Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="slideshow.html">Slideshow</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="images/Slideshow/image1.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/Slideshow/image2.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/Slideshow/image3.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/Slideshow/image4.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/Slideshow/image5.jpg" alt=""></div>
+                <div class="prev" onclick="showImage(-1)"><i class="fa-solid fa-angles-left"></i></div>
+                <div class="next" onclick="showImage(1)"><i class="fa-solid fa-angles-right"></i></div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Riley Mulligan</p>
+    </footer>
+    
+
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts-slideshow.js"></script>
+</body>
+</html>
